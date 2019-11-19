@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>行业系统</title>
+</head>
+ <style>
+ /* 590 470 */
+.ctboxs{
+	width: 830px;
+	height: 470px;
+	position: relative;
+	overflow: hidden;
+}
+.ctboxs .ctbox{
+	width: 650px;
+	height: 470px;
+	display: flex;
+	position: absolute;
+	top:0;
+	transition: 2s linear;
+	cursor: pointer;
+}
+.ctboxs .ct1{left:0;}
+.ctboxs .ct2{left:650px;}
+.ctboxs .ct3{left:710px;}
+.ctboxs .ct4{left:770px;}
+.ctboxs .ctbox .title1{
+	font-size: 22px;
+	padding: 130px 19px 0;
+	line-height: 36px;
+	color:white;
+}
+.ctboxs .ctbox .title2{
+	font-size: 22px;
+	padding: 130px 19px 0;
+	line-height: 36px;
+	color:white;
+}
+.ctboxs .ctbox .title3{
+	font-size: 22px;
+	padding: 130px 19px 0;
+	line-height: 36px;
+	color:white;
+}
+.ctboxs .ctbox .title4{
+	font-size: 22px;
+	padding: 130px 19px 0;
+	line-height: 36px;
+	color:white;
+}
+.ctboxs .ct1 .title1{
+	background:#00007F;
+}
+.ctboxs .ct2 .title2{
+	background:#EE8800;
+}
+.ctboxs .ct3 .title3{
+	background:#7F7F00;
+}
+.ctboxs .ct4 .title4{
+	background:#2361AD;
+</style>
+<body>
+	<div id="ct1" class="ctboxs">
+		 <div class="ctbox ct1">
+		 	<div class="title1">交通行业</div>
+		 	<div class="content">
+		 		<img src="images/001.jpg" alt="1"></div>
+		 </div>
+		 <div class="ctbox ct2">
+		 	<div class="title2 ">司法行业</div>
+		 	<div class="content">
+		 		<img src="images/002.jpg" alt="2"></div>
+		 </div>
+		 <div class="ctbox ct3">
+		 	<div class="title3">政府行业</div>
+		 	<div class="content">
+		 		<img src="images/003.jpg" alt="3"></div>
+		 </div>
+		 <div class="ctbox ct4">
+		 	<div class="title4">其它行业</div>
+		 	<div class="content">
+		 		<img src="images/004.jpg" alt="4"></div>
+		 </div>
+		</div>
+
+		<script>
+			var ctboxs=document.getElementById('ct1');
+			var ct1=ctboxs.getElementsByClassName('ct1')[0];
+			var ct2=ctboxs.getElementsByClassName('ct2')[0];
+			var ct3=ctboxs.getElementsByClassName('ct3')[0];
+			var ct4=ctboxs.getElementsByClassName('ct4')[0];
+			var title1=ctboxs.getElementsByClassName('title1')[0];
+			var title2=ctboxs.getElementsByClassName('title2')[0];
+			var title3=ctboxs.getElementsByClassName('title3')[0];
+			var title4=ctboxs.getElementsByClassName('title4')[0];
+				 title1.onclick=function(){
+				  ct1.style.left=0+'px';
+				  ct2.style.left=650+'px';
+				  ct3.style.left=710+'px';
+				  ct4.style.left=770+'px';
+      }
+      title2.onclick=function(){
+				  ct1.style.left=0+'px';
+				  ct2.style.left=60+'px';
+				  ct3.style.left=710+'px';
+				  ct4.style.left=770+'px';
+      }
+       title3.onclick=function(){
+				  ct1.style.left=0+'px';
+				  ct2.style.left=60+'px';
+				  ct3.style.left=120+'px';
+				  ct4.style.left=770+'px';
+      }
+       title4.onclick=function(){
+				  ct1.style.left=0+'px';
+				  ct2.style.left=60+'px';
+				  ct3.style.left=120+'px';
+				  ct4.style.left=180+'px';
+      }
+		</script>
+</body>
+</html>
