@@ -5,30 +5,26 @@
 	<title>行业系统</title>
 </head>
  <style>
- /* 590 470 */
 .ctboxs{
-	width: 830px;
-	height: 470px;
+	width: 470px;
+	height: 830px;
 	position: relative;
 	overflow: hidden;
+	border:3px solid blue;
 }
 .ctboxs .ctbox{
-	width: 650px;
-	height: 470px;
-	display: flex;
+	width: 470px;
+	height: 650px;
 	position: absolute;
 	top:0;
 	transition: 2s linear;
 }
-.ctboxs .ct1{left:0;}
-.ctboxs .ct2{left:650px;}
-.ctboxs .ct3{left:710px;}
-.ctboxs .ct4{left:770px;}
 .ctboxs .ctbox .title{
 	font-size: 22px;
-	padding: 130px 19px 0;
-	line-height: 36px;
 	color:white;
+	text-align:center;
+	height:65px;
+	line-height: 62px;
 }
 .ctboxs .ct1 .title{
 	background:#00007F;
@@ -41,28 +37,33 @@
 }
 .ctboxs .ct4 .title{
 	background:#2361AD;
+}
+.ctboxs .ct1{top:0;}
+.ctboxs .ct2{top:650px;}
+.ctboxs .ct3{top:710px;}
+.ctboxs .ct4{top:770px;}
 </style>
 <body>
 	<div id="ct1" class="ctboxs">
 		 <div class="ctbox ct1">
 		 	<div class="title">交通行业</div>
 		 	<div class="content">
-		 		<img src="images/001.jpg" alt="1"></div>
+		 		<img src="images/1.jpg" alt="1"></div>
 		 </div>
 		 <div class="ctbox ct2">
 		 	<div class="title">司法行业</div>
 		 	<div class="content">
-		 		<img src="images/001.jpg" alt="2"></div>
+		 		<img src="images/2.jpg" alt="2"></div>
 		 </div>
 		 <div class="ctbox ct3">
 		 	<div class="title">政府行业</div>
 		 	<div class="content">
-		 		<img src="images/001.jpg" alt="3"></div>
+		 		<img src="images/3.jpg" alt="3"></div>
 		 </div>
 		 <div class="ctbox ct4">
 		 	<div class="title">其它行业</div>
 		 	<div class="content">
-		 		<img src="images/001.jpg" alt="4"></div>
+		 		<img src="images/4.jpg" alt="4"></div>
 		 </div>
 		</div>
 
@@ -79,9 +80,9 @@
 					n=this.index;
 					for(var i=0;i<ctbox.length;i++){
 						if(i<=n){
-						ctbox[i].style.left=i*titleWidth+'px';
+						ctbox[i].style.top=i*titleWidth+'px';
 					}else{
-						ctbox[i].style.left=i*titleWidth+contentwidth+'px';
+						ctbox[i].style.top=i*titleWidth+contentwidth+'px';
 					}
 			  }
 			}
